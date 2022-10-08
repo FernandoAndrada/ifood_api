@@ -20,13 +20,14 @@ public class mercadosControler {
         return this.mercadoService.listar();
     }
     @GetMapping("/{index}")
-    public ResponseEntity<Mercado> buscar(@PathVariable Integer index){
+    public ResponseEntity<MercadoDto> buscar(@PathVariable Integer index){
         Mercado mercado = this.mercadoService.buscar(index);
 
        if (mercado == null){
            return ResponseEntity.notFound().build();
        }
-       return ResponseEntity.ok(mercado);
+       MercadoDto mercadoDto = new MercadoDto(mercado.getNome());
+       return ResponseEntity.ok(mercadoDto);
     }
 
 
