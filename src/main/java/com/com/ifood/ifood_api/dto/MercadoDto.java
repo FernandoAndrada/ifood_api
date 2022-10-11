@@ -1,4 +1,4 @@
-package com.com.ifood.ifood_api;
+package com.com.ifood.ifood_api.dto;
 
 public class MercadoDto {
 
@@ -6,6 +6,7 @@ public class MercadoDto {
 
     public MercadoDto (String nome){
         this.nome = nome;
+
     }
 
     public String getNome() {

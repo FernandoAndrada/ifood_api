@@ -1,5 +1,6 @@
-package com.com.ifood.ifood_api;
+package com.com.ifood.ifood_api.service;
 
+import com.com.ifood.ifood_api.entity.Mercado;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

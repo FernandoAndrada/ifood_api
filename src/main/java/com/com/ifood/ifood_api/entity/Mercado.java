@@ -1,10 +1,10 @@
-package com.com.ifood.ifood_api;
+package com.com.ifood.ifood_api.entity;
 
 public class Mercado {
 
     private String nome;
     private String login;
-    private String Senha;
+    private String senha;
 
     public String getLogin() {
         return login;
@@ -15,11 +15,11 @@ public class Mercado {
     }
 
     public String getSenha() {
-        return Senha;
+        return senha;
     }
 
     public void setSenha(String senha) {
-        Senha = senha;
+        this.senha = senha;
     }
 
     public String getNome(){

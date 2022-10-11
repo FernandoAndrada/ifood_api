@@ -1,16 +1,18 @@
-package com.com.ifood.ifood_api;
+package com.com.ifood.ifood_api.controler;
 
+import com.com.ifood.ifood_api.entity.Mercado;
+import com.com.ifood.ifood_api.dto.MercadoDto;
+import com.com.ifood.ifood_api.service.MercadoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 @RequestMapping ("/mercados")
-public class mercadosControler {
+public class MercadosControler {
 
    @Autowired
    private MercadoService mercadoService;
@@ -19,7 +21,7 @@ public class mercadosControler {
     public List<Mercado> listarMercados() {
         return this.mercadoService.listar();
     }
-    @GetMapping("/{index}")
+    @GetMapping("/{index}") //chaves mostra que é variável e @PathVariable
     public ResponseEntity<MercadoDto> buscar(@PathVariable Integer index){
         Mercado mercado = this.mercadoService.buscar(index);
 
