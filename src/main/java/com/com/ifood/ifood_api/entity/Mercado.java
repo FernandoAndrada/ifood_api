@@ -6,6 +6,26 @@ public class Mercado {
     private String login;
     private String senha;
 
+    private String bairro;
+
+    private String classificacao;
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public String getClassificacao() {
+        return classificacao;
+    }
+
+    public void setClassificacao(String classificacao) {
+        classificacao = classificacao;
+    }
+
     public String getLogin() {
         return login;
     }

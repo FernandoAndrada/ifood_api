@@ -1,12 +1,12 @@
 package com.com.ifood.ifood_api.entity;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 import org.springframework.data.annotation.Id;
 
-import javax.persistence.Entity;
+//import javax.persistence.Entity;
 
 
-@Entity
+//@Entity
 public class Restaurante {
 
     @Id
