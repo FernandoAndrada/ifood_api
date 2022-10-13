@@ -3,14 +3,23 @@ package com.com.ifood.ifood_api.entity;
 
 import org.springframework.data.annotation.Id;
 
+import javax.persistence.Entity;
+
 //import javax.persistence.Entity;
 
 
-//@Entity
 public class Restaurante {
 
-    @Id
-    private long id;
+
+    private Long id;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     private String nome;
 

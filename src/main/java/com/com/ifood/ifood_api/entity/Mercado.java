@@ -8,7 +8,17 @@ public class Mercado {
 
     private String bairro;
 
-    private String classificacao;
+    private String  categoria;
+
+    private String cep;
+
+    public String getCep() {
+        return cep;
+    }
+
+    public void setCep(String cep) {
+        this.cep = cep;
+    }
 
     public String getBairro() {
         return bairro;
@@ -18,12 +28,12 @@ public class Mercado {
         this.bairro = bairro;
     }
 
-    public String getClassificacao() {
-        return classificacao;
+    public String getCategoria() {
+        return categoria;
     }
 
-    public void setClassificacao(String classificacao) {
-        classificacao = classificacao;
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
     public String getLogin() {

@@ -36,11 +36,13 @@ public class MercadosControler {
 
 
     @PostMapping
-    public ResponseEntity<Void> inserir(@RequestBody Mercado mercado){
-            this.mercadoService.salvar(mercado);
-            return ResponseEntity.status(HttpStatus.CREATED).build();
-            //ResponseEntity constroe resposta status HTTP
+    public ResponseEntity<Void> inserir(@RequestBody Mercado mercado) {
+        this.mercadoService.salvar(mercado);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
+        //ResponseEntity constroe resposta status HTTP
     }
+
+
 }
 
 
